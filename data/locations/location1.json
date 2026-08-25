@@ -140,7 +140,7 @@
       "choices": [
         {
           "side": "left",
-          "text": "You choose to continue forward making you last decision pointless but you feel comfort in that.",
+          "text": "You choose to continue forward making you last decision pointless however, you feel comfort in that.",
           "label": "Continue this way",
           "next": "15"
         },
