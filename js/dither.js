@@ -20,7 +20,7 @@ const Dither = (() => {
 
   const settings = {
     levels: 5,        // color levels per channel — lower = more posterized/retro
-    cellSize: 1.2,     // size in screen pixels of one dither pattern cell — bigger = chunkier grain
+    cellSize: 1.8,     // size in screen pixels of one dither pattern cell — bigger = chunkier grain
     driftSpeed: 0.8,  // how fast the pattern drifts, in pattern-cells per second. Keep low for subtlety.
   };
 
