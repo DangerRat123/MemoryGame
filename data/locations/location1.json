@@ -70,7 +70,7 @@
       "choices": [
         {
           "side": "left",
-          "text": "You made the jump safely but now another decision. You chose the path seemingly lowering again. You find comfort in being closer to the murky water below.",
+          "text": "You made the jump safely but now another decision. You chose the path heading downwards. You find comfort in being closer to the murky water below.",
           "label": "Continue this way",
           "next": "24"
         },
