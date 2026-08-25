@@ -8,7 +8,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/02.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "You begin your journey on a dock leading to a collection of intertwined wooden platforms. Their stability is questionable but you must navigate them to complete your pilgrimage.",
       "continueLabel": "Continue",
       "next": "3"
     },
@@ -16,7 +16,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/03.png",
       "gif": null,
-      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "text": "You climb the ramped staircase slippery with moss barely being able to see where you go next.",
       "continueLabel": "Continue",
       "next": "4"
     },
@@ -27,13 +27,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "Etiam porta sem malesuada magna mollis euismod.",
+          "text": "You choose the path continuing forward ignoring the alternative and somewhat questionable path to your right.",
           "label": "Continue this way",
           "next": "11"
         },
         {
           "side": "right",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "text": "You choose the path the right ignoring the simpler path forward.",
           "label": "Continue this way",
           "next": "5"
         }
@@ -43,7 +43,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/05.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "This path seems tretcherous but you've already made your decision. Although risky this way fills you with excitment.",
       "continueLabel": "Continue",
       "next": "6"
     },
@@ -51,7 +51,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/06.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "You turn the corner, look down and see a path tilted, broken and sinking. You feel your decision has been made and you must continue.",
       "continueLabel": "Continue",
       "next": "7"
     },
@@ -59,7 +59,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/07.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "You stumble across the decaying path, slipping and sliding before making it to the final hurdle, a jump to the much more secure rock in front of you.",
       "continueLabel": "Continue",
       "next": "8"
     },
@@ -70,13 +70,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+          "text": "You made the jump safely but now another decision. You chose the path seemingly lowering again. You find comfort in being closer to the murky water below.",
           "label": "Continue this way",
           "next": "24"
         },
         {
           "side": "right",
-          "text": "Etiam porta sem malesuada magna mollis euismod.",
+          "text": "You made the jump safely but now another decision. You chose the path that seems simple as your last decision has made you cautious.",
           "label": "Continue this way",
           "next": "9"
         }
@@ -86,7 +86,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/09.png",
       "gif": null,
-      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "text": "You turn the first corner but before you do you look out into the nothingness of mist and dampness in the air. You don't know whether you feel fear or excitment.",
       "continueLabel": "Continue",
       "next": "10"
     },
@@ -94,7 +94,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/10.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "You turn the next corner and find yourself under a tree in which you hear rustling above. You are to afraid to look up so you continue forward.",
       "continueLabel": "Continue",
       "next": "29"
     },
@@ -102,7 +102,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/11.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "This path seems safe. You have steady footing but you worry that this path is too goof to be true. You continue forward anyway",
       "continueLabel": "Continue",
       "next": "12"
     },
@@ -113,13 +113,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+          "text": "Another decision to make. You choose left. Looking ahead both paths seem to lead to the same place but your instincts led you this way.",
           "label": "Continue this way",
           "next": "20"
         },
         {
           "side": "right",
-          "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+          "text": "Another decision to make. You choose right. Looking ahead both paths seem to lead to the same place but your instincts led you this way.",
           "label": "Continue this way",
           "next": "13"
         }
@@ -129,7 +129,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/13.png",
       "gif": null,
-      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "text": "You turn the corner and realise you are approaching yet another decision. This path wasn't as simple as it first looked.",
       "continueLabel": "Continue",
       "next": "14"
     },
@@ -140,13 +140,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "Etiam porta sem malesuada magna mollis euismod.",
+          "text": "You choose to continue forward making you last decision pointless but you feel comfort in that.",
           "label": "Continue this way",
           "next": "15"
         },
         {
           "side": "right",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "text": "You choose to take the right which leads to a mossy rock. This makes your last decision feel worth it.",
           "label": "Continue this way",
           "next": "22"
         }
@@ -156,7 +156,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/15.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "You continue forward and start to notice that these paths lead to the mouth of a cave. You wonder if thats where you're supposed to go.",
       "continueLabel": "Continue",
       "next": "16"
     },
@@ -164,7 +164,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/16.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "The closer you get to the mouth of the cave the more anxiety you feel. You're not sure if this is fear or excitment.",
       "continueLabel": "Continue",
       "next": "17"
     },
@@ -172,7 +172,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/17.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "You're only a few steps from the entrance and as you take each one an overwhelming feeling of completion grows within you.",
       "continueLabel": "Continue",
       "next": "18"
     },
@@ -180,7 +180,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/18.png",
       "gif": null,
-      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "text": "The cave is now calling your name. Your speed increases with excitment as you can't wait to discover what lays inside.",
       "continueLabel": "Continue",
       "next": "19"
     },
@@ -188,7 +188,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/19.png",
       "gif": null,
-      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "text": "You're here, at the mouth of the cave. You take a break now finally on solid land and contimplate your next steps.",
       "continueLabel": "Continue",
       "next": "37"
     },
@@ -196,7 +196,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/20.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "This path feels solid and simple yet you're not sure if this was the right direction to take.",
       "continueLabel": "Continue",
       "next": "21"
     },
@@ -204,7 +204,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/21.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "You approach a corner with no railings and a rush of fear hits you. One slip on the moss and you're in. You feel that you must stick with your decision go for it.",
       "continueLabel": "Continue",
       "next": "16"
     },
@@ -212,7 +212,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/22.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "This decision has led you to a large mossy stone in which multiple paths lead. You feel overwhelmed with decision but you wait to make up your mind until you reach the solid land.",
       "continueLabel": "Continue",
       "next": "23"
     },
@@ -220,7 +220,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/23.png",
       "gif": null,
-      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "text": "Although this rock has multiple paths you see a cave in the distance and know this is the path you must take.",
       "continueLabel": "Continue",
       "next": "26"
     },
@@ -228,7 +228,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/24.png",
       "gif": null,
-      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "text": "You realise this decision leads to a path in which your feet will get wet. The path is balancing on the water and you worry for your safety but continue anyway.",
       "continueLabel": "Continue",
       "next": "25"
     },
@@ -236,7 +236,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/25.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "Although not the longest path it feels so. You are trying to both be cautious as to not miss a step and risk your life.",
       "continueLabel": "Continue",
       "next": "38"
     },
@@ -244,7 +244,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/26.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "Although you know this is the path you must take as you approach you see its decay and start to doubt yourself. You push forward regardless.",
       "continueLabel": "Continue",
       "next": "27"
     },
@@ -252,7 +252,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/27.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "You made it acoss the suprisingly stable titled paths and reach an incline over another large rock. The rock is obscuring your view but you have faith in your decision.",
       "continueLabel": "Continue",
       "next": "28"
     },
@@ -260,7 +260,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/28.png",
       "gif": null,
-      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "text": "As you reach the sumit you are relived by a seemingly secure and simple path ahead leading directly to the mouth of the cave.",
       "continueLabel": "Continue",
       "next": "19"
     },
@@ -268,7 +268,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/29.png",
       "gif": null,
-      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "text": "You are now fully within the tree canopy. Unidentifiable fruit hangs down but you must bat it away to continue on your journey.",
       "continueLabel": "Continue",
       "next": "30"
     },
@@ -276,7 +276,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/30.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "You made it through the canopy and as you push the last leaves away you see that the path ahead has been damaged by a floating log. You choose to cross the log as a makeshift bridge as it seems to be lodged.",
       "continueLabel": "Continue",
       "next": "31"
     },
@@ -287,13 +287,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+          "text": "The log didn't move and you made it safely across. You now choose to take a left as it seems to bring you closer to a solid piece of land and that log has made you weary.",
           "label": "Continue this way",
           "next": "32"
         },
         {
           "side": "right",
-          "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+          "text": "The log didn't move and you made it safely across. You choose to take a right as this path seems fully visible and you don't want anymore suprises.",
           "label": "Continue this way",
           "next": "33"
         }
@@ -303,7 +303,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/32.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "You were right and this path led directly to solid ground. A mossy rock with several paths leading to and from it.",
       "continueLabel": "Continue",
       "next": "23"
     },
@@ -311,7 +311,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/33.png",
       "gif": null,
-      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "text": "This path feels relaxing. It is absent of risk and decision. You feel that you have nearly reached your goal.",
       "continueLabel": "Continue",
       "next": "34"
     },
@@ -319,7 +319,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/34.png",
       "gif": null,
-      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "text": "As you continue you feel calmer and calmer but are aware that calmness can cause recklessness so are still vigilant. The cave mouth you feel holds your goal peaks in the distance.",
       "continueLabel": "Continue",
       "next": "35"
     },
@@ -327,7 +327,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/35.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "Although not there yet you feel proud of you journey. You feel acomplished as well as relieved.",
       "continueLabel": "Continue",
       "next": "36"
     },
@@ -335,7 +335,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/36.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "The last hurdle. A slight incline leading to the mouth of the cave. You are extra careful as to fail at the last hurdle would destry your spirit.",
       "continueLabel": "Continue",
       "next": "37"
     },
@@ -343,7 +343,7 @@
       "type": "end",
       "image": "assets/stills/location-1/37.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "You have reached the mouth of the cave. You have no doubts and continue forward.",
       "next": null,
       "note": "Current final image \u2014 placeholder for offering/ending screen once built out."
     },
