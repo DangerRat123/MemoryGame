@@ -33,7 +33,7 @@
         },
         {
           "side": "right",
-          "text": "You choose the path the right ignoring the simpler path forward.",
+          "text": "You choose the path to the right ignoring the simpler path forward.",
           "label": "Continue this way",
           "next": "5"
         }
