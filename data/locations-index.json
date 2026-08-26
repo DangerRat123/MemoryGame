@@ -1,0 +1,10 @@
+{
+  "locations": [
+    { "id": "location-1", "name": "Location 1", "thumbnail": "assets/location-icons/01.png", "dataFile": "data/locations/location1.json" },
+    { "id": "location-2", "name": "Location 2", "thumbnail": "assets/location-icons/02.png", "dataFile": "data/locations/location2.json" },
+    { "id": "location-3", "name": "Location 3", "thumbnail": "assets/location-icons/03.png", "dataFile": "data/locations/location3.json" },
+    { "id": "location-4", "name": "Location 4", "thumbnail": "assets/location-icons/04.png", "dataFile": "data/locations/location4.json" },
+    { "id": "location-5", "name": "Location 5", "thumbnail": "assets/location-icons/05.png", "dataFile": "data/locations/location5.json" },
+    { "id": "location-6", "name": "Location 6", "thumbnail": "assets/location-icons/06.png", "dataFile": "data/locations/location6.json" }
+  ]
+}

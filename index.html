@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Pilgrimage — Location 1 Test</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="loading" class="loading">
+    <p class="loading-title">Preparing your path</p>
+  </div>
+
+  <section id="screen-location-select" class="screen hidden">
+    <h1 class="select-title">Choose your path</h1>
+    <div id="location-grid" class="location-grid"></div>
+  </section>
+
+  <section id="scene" class="scene hidden">
+    <canvas id="scene-canvas" class="scene-image"></canvas>
+
+    <!-- Linear screens: one box, bottom center -->
+    <div id="box-linear" class="textbox textbox-linear hidden">
+      <p id="linear-text" class="textbox-copy"></p>
+      <button id="linear-continue" class="continue-btn">Continue</button>
+    </div>
+
+    <!-- Choice screens: two boxes, bottom left / bottom right -->
+    <div id="box-left" class="textbox textbox-choice textbox-left hidden">
+      <p id="left-text" class="textbox-copy"></p>
+      <button id="left-continue" class="continue-btn">Continue this way</button>
+    </div>
+
+    <div id="box-right" class="textbox textbox-choice textbox-right hidden">
+      <p id="right-text" class="textbox-copy"></p>
+      <button id="right-continue" class="continue-btn">Continue this way</button>
+    </div>
+
+    <!-- End screen -->
+    <div id="box-end" class="textbox textbox-linear hidden">
+      <p id="end-text" class="textbox-copy"></p>
+      <p class="end-label">— end of test path —</p>
+    </div>
+  </section>
+
+  <script src="js/dither.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
