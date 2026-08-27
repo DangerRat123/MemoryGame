@@ -171,14 +171,14 @@ html, body {
    the same decision. */
 .textbox-left {
   left: 8%;
-  max-width: min(38ch, 30vw);
+  max-width: min(42ch, 34vw);
   align-items: flex-start;
   text-align: left;
 }
 
 .textbox-right {
   right: 8%;
-  max-width: min(38ch, 30vw);
+  max-width: min(42ch, 34vw);
   align-items: flex-start;
   text-align: left;
 }
