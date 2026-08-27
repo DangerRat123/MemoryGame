@@ -147,7 +147,7 @@ html, body {
 .textbox {
   position: absolute;
   bottom: 2rem;
-  max-width: min(50ch, 34vw);
+  max-width: min(65ch, 46vw);
   display: flex;
   flex-direction: column;
   gap: 1rem;
