@@ -1,0 +1,327 @@
+{
+  "id": "location-2",
+  "name": "Location 2",
+  "thumbnail": "assets/location-icons/02.png",
+  "start": "1",
+  "nodes": {
+    "1": {
+      "type": "linear",
+      "image": "assets/stills/location-2/01.png",
+      "gif": null,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "continueLabel": "Continue",
+      "next": "2"
+    },
+    "2": {
+      "type": "choice",
+      "image": "assets/stills/location-2/02.png",
+      "gif": null,
+      "choices": [
+        {
+          "side": "left",
+          "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+          "label": "Continue this way",
+          "next": "3"
+        },
+        {
+          "side": "right",
+          "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+          "label": "Continue this way",
+          "next": "17"
+        }
+      ]
+    },
+    "3": {
+      "type": "linear",
+      "image": "assets/stills/location-2/03.png",
+      "gif": null,
+      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "continueLabel": "Continue",
+      "next": "4"
+    },
+    "4": {
+      "type": "linear",
+      "image": "assets/stills/location-2/04.png",
+      "gif": null,
+      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "continueLabel": "Continue",
+      "next": "5"
+    },
+    "5": {
+      "type": "linear",
+      "image": "assets/stills/location-2/05.png",
+      "gif": null,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "continueLabel": "Continue",
+      "next": "6"
+    },
+    "6": {
+      "type": "choice",
+      "image": "assets/stills/location-2/06.png",
+      "gif": null,
+      "choices": [
+        {
+          "side": "left",
+          "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+          "label": "Continue this way",
+          "next": "7"
+        },
+        {
+          "side": "right",
+          "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+          "label": "Continue this way",
+          "next": "27"
+        }
+      ]
+    },
+    "7": {
+      "type": "linear",
+      "image": "assets/stills/location-2/07.png",
+      "gif": null,
+      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "continueLabel": "Continue",
+      "next": "8"
+    },
+    "8": {
+      "type": "linear",
+      "image": "assets/stills/location-2/08.png",
+      "gif": null,
+      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "continueLabel": "Continue",
+      "next": "9"
+    },
+    "9": {
+      "type": "choice",
+      "image": "assets/stills/location-2/09.png",
+      "gif": null,
+      "choices": [
+        {
+          "side": "left",
+          "text": "Etiam porta sem malesuada magna mollis euismod.",
+          "label": "Continue this way",
+          "next": "10"
+        },
+        {
+          "side": "right",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "label": "Continue this way",
+          "next": "14"
+        }
+      ]
+    },
+    "10": {
+      "type": "linear",
+      "image": "assets/stills/location-2/10.png",
+      "gif": null,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "continueLabel": "Continue",
+      "next": "11"
+    },
+    "11": {
+      "type": "linear",
+      "image": "assets/stills/location-2/11.png",
+      "gif": null,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "continueLabel": "Continue",
+      "next": "12"
+    },
+    "12": {
+      "type": "linear",
+      "image": "assets/stills/location-2/12.png",
+      "gif": null,
+      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "continueLabel": "Continue",
+      "next": "13"
+    },
+    "13": {
+      "type": "end",
+      "image": "assets/stills/location-2/13.png",
+      "gif": null,
+      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "next": null,
+      "note": "Placeholder text \u2014 replace with real copy once written."
+    },
+    "14": {
+      "type": "linear",
+      "image": "assets/stills/location-2/14.png",
+      "gif": null,
+      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "continueLabel": "Continue",
+      "next": "15"
+    },
+    "15": {
+      "type": "linear",
+      "image": "assets/stills/location-2/15.png",
+      "gif": null,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "continueLabel": "Continue",
+      "next": "16"
+    },
+    "16": {
+      "type": "linear",
+      "image": "assets/stills/location-2/16.png",
+      "gif": null,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "continueLabel": "Continue",
+      "next": "13"
+    },
+    "17": {
+      "type": "linear",
+      "image": "assets/stills/location-2/17.png",
+      "gif": null,
+      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "continueLabel": "Continue",
+      "next": "18"
+    },
+    "18": {
+      "type": "linear",
+      "image": "assets/stills/location-2/18.png",
+      "gif": null,
+      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "continueLabel": "Continue",
+      "next": "19"
+    },
+    "19": {
+      "type": "choice",
+      "image": "assets/stills/location-2/19.png",
+      "gif": null,
+      "choices": [
+        {
+          "side": "left",
+          "text": "Etiam porta sem malesuada magna mollis euismod.",
+          "label": "Continue this way",
+          "next": "28"
+        },
+        {
+          "side": "right",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "label": "Continue this way",
+          "next": "20"
+        }
+      ]
+    },
+    "20": {
+      "type": "linear",
+      "image": "assets/stills/location-2/20.png",
+      "gif": null,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "continueLabel": "Continue",
+      "next": "21"
+    },
+    "21": {
+      "type": "linear",
+      "image": "assets/stills/location-2/21.png",
+      "gif": null,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "continueLabel": "Continue",
+      "next": "22"
+    },
+    "22": {
+      "type": "linear",
+      "image": "assets/stills/location-2/22.png",
+      "gif": null,
+      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "continueLabel": "Continue",
+      "next": "23"
+    },
+    "23": {
+      "type": "linear",
+      "image": "assets/stills/location-2/23.png",
+      "gif": null,
+      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "continueLabel": "Continue",
+      "next": "24"
+    },
+    "24": {
+      "type": "linear",
+      "image": "assets/stills/location-2/24.png",
+      "gif": null,
+      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "continueLabel": "Continue",
+      "next": "25"
+    },
+    "25": {
+      "type": "linear",
+      "image": "assets/stills/location-2/25.png",
+      "gif": null,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "continueLabel": "Continue",
+      "next": "26"
+    },
+    "26": {
+      "type": "linear",
+      "image": "assets/stills/location-2/26.png",
+      "gif": null,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "continueLabel": "Continue",
+      "next": "13"
+    },
+    "27": {
+      "type": "linear",
+      "image": "assets/stills/location-2/27.png",
+      "gif": null,
+      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "continueLabel": "Continue",
+      "next": "29"
+    },
+    "28": {
+      "type": "linear",
+      "image": "assets/stills/location-2/28.png",
+      "gif": null,
+      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "continueLabel": "Continue",
+      "next": "29"
+    },
+    "29": {
+      "type": "choice",
+      "image": "assets/stills/location-2/29.png",
+      "gif": null,
+      "choices": [
+        {
+          "side": "left",
+          "text": "Etiam porta sem malesuada magna mollis euismod.",
+          "label": "Continue this way",
+          "next": "30"
+        },
+        {
+          "side": "right",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "label": "Continue this way",
+          "next": "32"
+        }
+      ]
+    },
+    "30": {
+      "type": "linear",
+      "image": "assets/stills/location-2/30.png",
+      "gif": null,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "continueLabel": "Continue",
+      "next": "31"
+    },
+    "31": {
+      "type": "linear",
+      "image": "assets/stills/location-2/31.png",
+      "gif": null,
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "continueLabel": "Continue",
+      "next": "15"
+    },
+    "32": {
+      "type": "linear",
+      "image": "assets/stills/location-2/32.png",
+      "gif": null,
+      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "continueLabel": "Continue",
+      "next": "33"
+    },
+    "33": {
+      "type": "linear",
+      "image": "assets/stills/location-2/33.png",
+      "gif": null,
+      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "continueLabel": "Continue",
+      "next": "24"
+    }
+  }
+}
