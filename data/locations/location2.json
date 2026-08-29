@@ -169,7 +169,7 @@
       "type": "linear",
       "image": "assets/stills/location-2/17.png",
       "gif": null,
-      "text": "As you turn right an echoing sound of wind bellows out. Although this scres you, you continue forward.",
+      "text": "As you turn right an echoing sound of wind bellows out. Although this scares you, you continue forward.",
       "continueLabel": "Continue",
       "next": "18"
     },
