@@ -43,7 +43,7 @@
       "type": "linear",
       "image": "assets/stills/location-2/04.png",
       "gif": null,
-      "text": "As you turn the abandonment of this place becomes more and more obvious. Off-center containers, broken lights and the smell of rust in the air..",
+      "text": "As you turn the abandonment of this place becomes more and more obvious. Off-center containers, broken lights and the smell of rust in the air.",
       "continueLabel": "Continue",
       "next": "5"
     },
@@ -78,7 +78,7 @@
       "type": "linear",
       "image": "assets/stills/location-2/07.png",
       "gif": null,
-      "text": "This path is fear inducing. The containers about hanging on by a thread. Despite this you push forward with speed in your step.",
+      "text": "This path is fear inducing. The containers above are hanging on by a thread. Despite this you push forward with speed in your step.",
       "continueLabel": "Continue",
       "next": "8"
     },
@@ -97,13 +97,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "You reach the top of the ladder and the path splits. Both will lead you to a bridge of winding containers but you instinctually choose left.",
+          "text": "You reach the top of the ladder and the path splits. Both lead you through a maze of winding containers but you instinctually choose left.",
           "label": "Continue this way",
           "next": "10"
         },
         {
           "side": "right",
-          "text": "You reach the top of the ladder and the path splits. Both will lead you to a bridge of winding containers but you instinctually choose right.",
+          "text": "You reach the top of the ladder and the path splits. Both lead you through a maze of winding containers but you instinctually choose right.",
           "label": "Continue this way",
           "next": "14"
         }
@@ -236,7 +236,7 @@
       "type": "linear",
       "image": "assets/stills/location-2/24.png",
       "gif": null,
-      "text": "As you push forward you see a moved container and are not sure if you gat get past it but you approach it to see.",
+      "text": "As you push forward you see a moved container and are not sure if you can get past it but you approach it to see.",
       "continueLabel": "Continue",
       "next": "25"
     },
@@ -244,7 +244,7 @@
       "type": "linear",
       "image": "assets/stills/location-2/25.png",
       "gif": null,
-      "text": "The gap is wide enough side step through so you tilt you body and push forward into what feels like might be a dead end.",
+      "text": "The gap is wide enough to side step through so you tilt you body and push forward into what feels like what might be a dead end.",
       "continueLabel": "Continue",
       "next": "26"
     },
@@ -285,7 +285,7 @@
         },
         {
           "side": "right",
-          "text": "Once in the opening you see two paths in front of you. A small gap between containers or a ladder taking you on top of them. You feel the gap was made on purpose so you squeeze through.",
+          "text": "Once in the opening you see two paths in front of you. A small gap between containers or a ladder taking you on top of them. You feel the gap was made with purpose so you squeeze through.",
           "label": "Continue this way",
           "next": "32"
         }
