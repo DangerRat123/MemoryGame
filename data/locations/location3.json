@@ -8,7 +8,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/01.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "You began your journey at the broken gates of a fort in some distant misty and cold mountains. You stepped inside to begin your journey.",
       "continueLabel": "Continue",
       "next": "2"
     },
@@ -16,7 +16,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/02.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "Once inside you reached yet another archway. A doorless opening seemingly going further into the fort.",
       "continueLabel": "Continue",
       "next": "3"
     },
@@ -27,13 +27,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+          "text": "You reached a decision. Two doorways stood infront of you barely distinct from each other. The opening to the left seemed to be brighter and this made you feel safe. You entered it.",
           "label": "Continue this way",
           "next": "5"
         },
         {
           "side": "right",
-          "text": "Etiam porta sem malesuada magna mollis euismod.",
+          "text": "You reached a decision. Two doorways stood infront of you barely distinct from each other. The opening to the right seemed darker and this intriged you. You entered it.",
           "label": "Continue this way",
           "next": "4"
         }
@@ -43,7 +43,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/04.png",
       "gif": null,
-      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "text": "You approached the doorway and felt a cold breeze. This didn't deter you so you continued forward.",
       "continueLabel": "Continue",
       "next": "6"
     },
@@ -51,7 +51,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/05.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "You approached the doorway and heard a whistling breeze pass through. This peaked your curiosity and you continue forward.",
       "continueLabel": "Continue",
       "next": "27"
     },
@@ -59,7 +59,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/06.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "The doorway led directly into a dark mountain path. With the air damp and the rocks wet you continued forward.",
       "continueLabel": "Continue",
       "next": "7"
     },
@@ -67,7 +67,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/07.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "Once you turned the corner of the rocky path you were comforted by the sight of another man-made doorway. You confidently entered.",
       "continueLabel": "Continue",
       "next": "8"
     },
@@ -75,7 +75,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/08.png",
       "gif": null,
-      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "text": "After entering the door you see more structures but this time not something you can pass through. You hugged this wall as you continued forward.",
       "continueLabel": "Continue",
       "next": "9"
     },
@@ -83,7 +83,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/09.png",
       "gif": null,
-      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "text": "Luckily this wall did not lead to a dead end. It continued into more dark and damp rocks which you hesitently passed through.",
       "continueLabel": "Continue",
       "next": "10"
     },
@@ -94,13 +94,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "text": "This path led you to a split in the path. The path to the left felt correct so you continued this way.",
           "label": "Continue this way",
           "next": "17"
         },
         {
           "side": "right",
-          "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+          "text": "This path led you to a split in the path. The path to the right felt correct so you continued this way.",
           "label": "Continue this way",
           "next": "11"
         }
@@ -110,7 +110,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/11.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "As you moved further to the right you saw the distant image of yet another man-made gateway. You approach hoping it leads your goal.",
       "continueLabel": "Continue",
       "next": "12"
     },
@@ -118,7 +118,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/12.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "With the sun peaking over the mountain and lighting up the gate you felt as if you were being pointed in the direction you needed to go. You continued forward.",
       "continueLabel": "Continue",
       "next": "13"
     },
@@ -126,7 +126,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/13.png",
       "gif": null,
-      "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "text": "The sunlit stone made you lose all discomfort the wet damp rock made you feel. There was comfort in where you were in your journey. You enter the arch.",
       "continueLabel": "Continue",
       "next": "14"
     },
@@ -134,7 +134,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/14.png",
       "gif": null,
-      "text": "Etiam porta sem malesuada magna mollis euismod.",
+      "text": "This led to tighter mountain paths but with your newfound comfort you felt strong in continuing your journey.",
       "continueLabel": "Continue",
       "next": "15"
     },
@@ -142,7 +142,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/15.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "The path seemed endless but you felt that you were almost there. You pushed forward knowing the end is near.",
       "continueLabel": "Continue",
       "next": "16"
     },
@@ -150,7 +150,7 @@
       "type": "linear",
       "image": "assets/stills/location-3/16.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "A descreet cave entrance appeared and after a short breather you crawl through knowing you filled with both hesitation and excitment.",
       "continueLabel": "Continue",
       "next": "ending-1",
       "note": "Placeholder text \u2014 hands off to the shared ending sequence once it's added."
