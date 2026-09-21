@@ -1,10 +1,10 @@
 {
   "items": [
     { "id": "item-1", "name": "Item 1", "icon": "assets/items/01.png" },
-    { "id": "item-2", "name": "Item 2", "icon": "assets/items/02.png" },
-    { "id": "item-3", "name": "Item 3", "icon": "assets/items/03.png" },
-    { "id": "item-4", "name": "Item 4", "icon": "assets/items/04.png" },
-    { "id": "item-5", "name": "Item 5", "icon": "assets/items/05.png" },
+    { "id": "item-2", "name": "Shell", "icon": "assets/items/02.png" },
+    { "id": "item-3", "name": "Cork", "icon": "assets/items/03.png" },
+    { "id": "item-4", "name": "Ring", "icon": "assets/items/04.png" },
+    { "id": "item-5", "name": "Thimble", "icon": "assets/items/05.png" },
     { "id": "item-6", "name": "Item 6", "icon": "assets/items/06.png" },
     { "id": "item-7", "name": "Item 7", "icon": "assets/items/07.png" },
     { "id": "item-8", "name": "Item 8", "icon": "assets/items/08.png" },
