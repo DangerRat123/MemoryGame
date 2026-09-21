@@ -18,7 +18,7 @@ html, body {
   overflow-y: auto;
   overflow-x: hidden;
   font-family: "Darinia", monospace;
-  cursor: url("assets/cursor/default.png") 4 4, auto;
+  cursor: url("../assets/cursor/default.png") 4 4, auto;
 }
 
 .hidden {
@@ -378,6 +378,9 @@ button,
 .choose-path-btn,
 .continue-btn,
 .carousel-arrow,
+.begin-btn {
+  cursor: url("../assets/cursor/pointer.png") 4 4, pointer;
+}
 .begin-btn {
   cursor: url("assets/cursor/pointer.png") 4 4, pointer;
 }
