@@ -441,6 +441,7 @@ function render() {
     el.linearText.textContent = node.text;
     el.linearBtn.textContent = node.continueLabel || "Continue";
     el.boxLinear.classList.remove("hidden");
+    el.boxLinear.classList.remove("textbox-center-screen");
     el.linearBtn.onclick = () => goTo(node.next);
 
   } else if (node.type === "choice") {
@@ -464,6 +465,7 @@ function render() {
     el.linearText.textContent = node.text;
     el.linearBtn.textContent = node.continueLabel || "Finish";
     el.boxLinear.classList.remove("hidden");
+    el.boxLinear.classList.toggle("textbox-center-screen", !node.image);
     el.linearBtn.onclick = returnToTitle;
   }
 }
