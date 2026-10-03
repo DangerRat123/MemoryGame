@@ -421,11 +421,18 @@ function render() {
     return;
   }
 
-  const cachedImage = imageCache[node.image];
-  if (cachedImage) {
-    Dither.setImage(cachedImage);
+  if (node.image) {
+    el.canvas.classList.remove("hidden");
+    const cachedImage = imageCache[node.image];
+    if (cachedImage) {
+      Dither.setImage(cachedImage);
+    } else {
+      console.warn("Image not in cache, was it in the preload list?", node.image);
+    }
   } else {
-    console.warn("Image not in cache, was it in the preload list?", node.image);
+    // No image on this node — a genuinely blank screen (just the body's
+    // black background showing through), used for the closing text screen.
+    el.canvas.classList.add("hidden");
   }
 
   hideAllBoxes();
