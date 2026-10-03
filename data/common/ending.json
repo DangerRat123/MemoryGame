@@ -1,14 +1,6 @@
 {
-  "start": "ending-1",
+  "start": "ending-2",
   "nodes": {
-    "ending-1": {
-      "type": "linear",
-      "image": "assets/stills/ending/01.png",
-      "gif": null,
-      "text": "Pushing through the darkness of the entrance of this place you found yourself in a cave which felt eerily different to the place you just were.",
-      "continueLabel": "Continue",
-      "next": "ending-2"
-    },
     "ending-2": {
       "type": "linear",
       "image": "assets/stills/ending/02.png",
@@ -58,12 +50,20 @@
       "next": "ending-8"
     },
     "ending-8": {
-      "type": "finish",
+      "type": "linear",
       "image": "assets/stills/ending/08.png",
       "gif": null,
       "text": "Being confronted with what was seeminly the end of your journey you realised you had taken an object with you. You didn't understand why at first but now it made sense, it was to be left there.",
+      "continueLabel": "Continue",
+      "next": "ending-9"
+    },
+    "ending-9": {
+      "type": "finish",
+      "image": null,
+      "gif": null,
+      "text": "Lorem ipsum dolor sit amet — placeholder closing line, replace with your real text.",
       "continueLabel": "Finish Your Memory",
-      "note": "The true end — this button returns to the title screen rather than continuing to another node."
+      "note": "The true end — a blank screen (no image) with closing text. This button returns to the title screen."
     }
   }
 }
