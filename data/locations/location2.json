@@ -133,14 +133,14 @@
       "continueLabel": "Continue",
       "next": "13"
     },
-    "13": {
-      "type": "end",
-      "image": "assets/stills/location-2/13.png",
-      "gif": null,
-      "text": "Before you entered you took a breath and prepared for the end of your pilgrimage.",
-      "next": null,
-      "note": "Placeholder text \u2014 replace with real copy once written."
-    },
+   "13": {
+  "type": "linear",
+  "image": "assets/stills/location-2/13.png",
+  "gif": null,
+  "text": "...(your text)...",
+  "continueLabel": "Continue",
+  "next": "ending-1"
+}
     "14": {
       "type": "linear",
       "image": "assets/stills/location-2/14.png",
