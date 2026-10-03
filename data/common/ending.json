@@ -5,7 +5,7 @@
       "type": "linear",
       "image": "assets/stills/ending/02.png",
       "gif": null,
-      "text": "Moving forward the humidity had changed, dust was in the air and moisture hit your skin. This place felt both wrong and right so you pushed forward against your instinct.",
+      "text": "You pushed through the seemingly endless darkness of the endtrance. As you Moved forward the humidity had changed and the dust was thick. This place felt both wrong and right. You pushed forward against your instinct.",
       "continueLabel": "Continue",
       "next": "ending-3"
     },
@@ -21,7 +21,7 @@
       "type": "linear",
       "image": "assets/stills/ending/04.png",
       "gif": null,
-      "text": "You then were confronted with a bend in the path. You hoped this bend would be the final.",
+      "text": "You then were confronted with a bend in the path. You hoped this bend would be the last.",
       "continueLabel": "Continue",
       "next": "ending-5"
     },
@@ -29,7 +29,7 @@
       "type": "linear",
       "image": "assets/stills/ending/05.png",
       "gif": null,
-      "text": "The bend led to an open room. One in which the visibility was low. Despite this you pushed forward feeling more confident than ever.",
+      "text": "The bend led to an open room. One in which the visibility was low. Despite this you pushed forward feeling more committed than ever.",
       "continueLabel": "Continue",
       "next": "ending-6"
     },
@@ -61,7 +61,7 @@
       "type": "finish",
       "image": null,
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet — placeholder closing line, replace with your real text.",
+      "text": "You left your object on the pedestal. Nothing happended but you felt a change in you. You accomplished your journey and with this accomplishment you turned around and left the way you came. Everytime you see that object you are reminded of this journey and are filled with all the emotions you felt along the way.",
       "continueLabel": "Finish Your Memory",
       "note": "The true end — a blank screen (no image) with closing text. This button returns to the title screen."
     }
