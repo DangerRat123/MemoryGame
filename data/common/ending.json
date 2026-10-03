@@ -5,7 +5,7 @@
       "type": "linear",
       "image": "assets/stills/ending/01.png",
       "gif": null,
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "text": "Pushing through the darkness of the entrance of this place you found yourself in a cave which felt eerily different to the place you just were.",
       "continueLabel": "Continue",
       "next": "ending-2"
     },
@@ -13,7 +13,7 @@
       "type": "linear",
       "image": "assets/stills/ending/02.png",
       "gif": null,
-      "text": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "text": "Moving forward the humidity had changed, dust was in the air and moisture hit your skin. This place felt both wrong and right so you pushed forward against your instinct.",
       "continueLabel": "Continue",
       "next": "ending-3"
     },
@@ -21,7 +21,7 @@
       "type": "linear",
       "image": "assets/stills/ending/03.png",
       "gif": null,
-      "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+      "text": "Although dark you weren't fearful. Beams of light piercing the cave walls lit your way. A feeling of greating meaning possesed you.",
       "continueLabel": "Continue",
       "next": "ending-4"
     },
@@ -29,7 +29,7 @@
       "type": "linear",
       "image": "assets/stills/ending/04.png",
       "gif": null,
-      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+      "text": "You then were confronted with a bend in the path. You hoped this bend would be the final.",
       "continueLabel": "Continue",
       "next": "ending-5"
     },
@@ -37,7 +37,7 @@
       "type": "linear",
       "image": "assets/stills/ending/05.png",
       "gif": null,
-      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa.",
+      "text": "The bend led to an open room. One in which the visibility was low. Despite this you pushed forward feeling more confident than ever.",
       "continueLabel": "Continue",
       "next": "ending-6"
     },
@@ -45,7 +45,7 @@
       "type": "linear",
       "image": "assets/stills/ending/06.png",
       "gif": null,
-      "text": "Curabitur pretium tincidunt lacus, ut interdum tellus elit sed risus.",
+      "text": "As you pushed forward the dense dust began to give way to something man-made. You didn't know what but you knew you had to approach.",
       "continueLabel": "Continue",
       "next": "ending-7"
     },
@@ -53,7 +53,7 @@
       "type": "linear",
       "image": "assets/stills/ending/07.png",
       "gif": null,
-      "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "text": "Getting closer and closer the dust revealed a shrine with an empty pedestal. You wondered what belonged there and why your path took you here. You got closer.",
       "continueLabel": "Continue",
       "next": "ending-8"
     },
@@ -61,7 +61,7 @@
       "type": "finish",
       "image": "assets/stills/ending/08.png",
       "gif": null,
-      "text": "Nulla facilisi. Praesent commodo cursus magna, vel scelerisque nisl.",
+      "text": "Being confronted with what was seeminly the end of your journey you realised you had taken an object with you. You didn't understand why at first but now it made sense, it was to be left there.",
       "continueLabel": "Finish Your Memory",
       "note": "The true end — this button returns to the title screen rather than continuing to another node."
     }
