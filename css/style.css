@@ -310,6 +310,14 @@ html, body {
   text-align: center;
 }
 
+/* Used for blank/image-less screens — centered on the whole viewport
+   instead of sitting at the bottom like every other text box. */
+.textbox-linear.textbox-center-screen {
+  top: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+}
+
 .textbox-left {
   left: 8%;
   max-width: min(42ch, 34vw);
@@ -380,7 +388,4 @@ button,
 .carousel-arrow,
 .begin-btn {
   cursor: url("../assets/cursor/pointer.png") 4 4, pointer;
-}
-.begin-btn {
-  cursor: url("assets/cursor/pointer.png") 4 4, pointer;
 }
