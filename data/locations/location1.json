@@ -340,13 +340,13 @@
       "next": "37"
     },
     "37": {
-      "type": "end",
-      "image": "assets/stills/location-1/37.png",
-      "gif": null,
-      "text": "You reached the mouth of the cave. You had no doubts and continued forward.",
-      "next": null,
-      "note": "Current final image \u2014 placeholder for offering/ending screen once built out."
-    },
+  "type": "linear",
+  "image": "assets/stills/location-1/37.png",
+  "gif": null,
+  "text": "...(your text)...",
+  "continueLabel": "Continue",
+  "next": "ending-1"
+}
     "38": {
       "type": "linear",
       "image": "assets/stills/location-1/38.png",
