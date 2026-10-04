@@ -5,7 +5,7 @@
       "type": "linear",
       "image": "assets/stills/ending/02.png",
       "gif": null,
-      "text": "You pushed through the seemingly endless darkness of the entrance. As you Moved forward the humidity had changed and the dust was thick. This place felt both wrong and right. You pushed forward against your instinct.",
+      "text": "You pushed through the seemingly endless darkness of the entrance. As you Moved forward the humidity had changed and the dust was thick. This place felt different from where you just were. You pushed forward against your instinct.",
       "continueLabel": "Continue",
       "next": "ending-3"
     },
@@ -13,7 +13,7 @@
       "type": "linear",
       "image": "assets/stills/ending/03.png",
       "gif": null,
-      "text": "Although dark you weren't fearful. Beams of light piercing the cave walls lit your way. A feeling of greating meaning possesed you.",
+      "text": "Although dark you weren't fearful. Beams of light pierced the cave walls to light your way. A feeling of greating meaning possesed you.",
       "continueLabel": "Continue",
       "next": "ending-4"
     },
@@ -21,7 +21,7 @@
       "type": "linear",
       "image": "assets/stills/ending/04.png",
       "gif": null,
-      "text": "You then were confronted with a bend in the path. You hoped this bend would be the last.",
+      "text": "As you progressed you then were confronted with a bend in the path. You hoped this bend would be the last.",
       "continueLabel": "Continue",
       "next": "ending-5"
     },
@@ -37,7 +37,7 @@
       "type": "linear",
       "image": "assets/stills/ending/06.png",
       "gif": null,
-      "text": "As you pushed forward the dense dust began to give way to something man-made. You didn't know what but you knew you had to approach.",
+      "text": "As you pushed forward the dense dust gave way to something man-made. You didn't know what but you knew you had to approach.",
       "continueLabel": "Continue",
       "next": "ending-7"
     },
@@ -53,7 +53,7 @@
       "type": "linear",
       "image": "assets/stills/ending/08.png",
       "gif": null,
-      "text": "Being confronted with what was seeminly the end of your journey you realised you had taken an object with you. You didn't understand why at first but now it made sense, it was to be left there.",
+      "text": "Being confronted with what was seeminly the end of your journey you realised you had taken an object with you. You didn't understand why at first but then it made sense, it was to be left there.",
       "continueLabel": "Continue",
       "next": "ending-9"
     },
