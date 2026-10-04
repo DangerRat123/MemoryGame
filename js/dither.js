@@ -246,4 +246,4 @@ const DitherFactory = (() => {
   return { create };
 })();
 
-const Dither = DitherFactory.create({ mode: "organic" });
+const Dither = DitherFactory.create();
