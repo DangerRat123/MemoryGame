@@ -318,6 +318,21 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
+/* No box, no border — just text sitting directly on the black screen,
+   closer in feel to the title screen than an in-journey prompt. */
+.textbox-bare {
+  background: none;
+  border: none;
+  backdrop-filter: none;
+  padding: 0;
+  max-width: min(60ch, 70vw);
+}
+
+.textbox-bare .textbox-copy {
+  font-size: 1.9rem;
+  line-height: 1.5;
+}
+
 .textbox-left {
   left: 8%;
   max-width: min(42ch, 34vw);
