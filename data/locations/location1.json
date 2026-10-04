@@ -8,7 +8,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/02.png",
       "gif": null,
-      "text": "You began your journey on a dock leading to a collection of intertwined wooden platforms. Their stability was questionable but you had to navigate them to complete your pilgrimage.",
+      "text": "You began your journey on a dock leading to a collection of intertwined wooden platforms. Their stability was questionable but you knew you had to navigate them to complete your pilgrimage.",
       "continueLabel": "Continue",
       "next": "3"
     },
@@ -43,7 +43,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/05.png",
       "gif": null,
-      "text": "This path seemed tretcherous but you already made your decision. Although risky this way filled you with excitment.",
+      "text": "This path seemed tretcherous but you had already made your decision. Although riskier, this way filled you with excitment.",
       "continueLabel": "Continue",
       "next": "6"
     },
@@ -51,7 +51,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/06.png",
       "gif": null,
-      "text": "You turned the corner, looked down and saw a path tilted, broken and sinking. You felt that your decision has been made and you must continue.",
+      "text": "You turned the corner, looked down and saw a path tilted, broken and sinking. You felt that your decision has been made and you couldn't turn back.",
       "continueLabel": "Continue",
       "next": "7"
     },
@@ -59,7 +59,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/07.png",
       "gif": null,
-      "text": "You stumbled across the decaying path, slipping and sliding before making it to the final hurdle, a gap. You jumped to the much more secure rock in front of you.",
+      "text": "You stumbled across the decaying path, slipping and sliding before making it to the final hurdle, a gap. You readied yourself to jump to the much more secure rock in front of you.",
       "continueLabel": "Continue",
       "next": "8"
     },
@@ -70,13 +70,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "You made the jump safely but now another decision. You chose the path heading downwards. You found comfort in being closer to the murky water below.",
+          "text": "You made the jump safely but then another decision. You chose the path heading downwards. You found comfort in being closer to the murky water below.",
           "label": "Continue this way",
           "next": "24"
         },
         {
           "side": "right",
-          "text": "You made the jump safely but now another decision. You chose the path that seemed simple as your last decision made you cautious.",
+          "text": "You made the jump safely but then another decision. You chose the path that seemed simple as your last decision had made you cautious.",
           "label": "Continue this way",
           "next": "9"
         }
@@ -86,7 +86,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/09.png",
       "gif": null,
-      "text": "You turned the first corner but before you did you looked out into the nothingness of your surroundings. You didn't know whether you felt fear or excitment.",
+      "text": "You turned the first corner but before you did you looked out into the nothingness of your surroundings. You didn't know whether you felt fear or committment.",
       "continueLabel": "Continue",
       "next": "10"
     },
@@ -102,7 +102,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/11.png",
       "gif": null,
-      "text": "This path seemed safe. You had steady footing but you worried that this path is too good to be true. You continued forward anyway",
+      "text": "The path seemed safe. You had steady footing but you worried that this path was too good to be true. You continued forward anyway",
       "continueLabel": "Continue",
       "next": "12"
     },
@@ -113,13 +113,13 @@
       "choices": [
         {
           "side": "left",
-          "text": "Another decision to make. You chose left. Looking ahead both paths seemed to lead to the same place but your instincts led you this way.",
+          "text": "You had another decision to make. You chose left. Looking ahead both paths seemed to lead to the same place but your instincts led you this way.",
           "label": "Continue this way",
           "next": "20"
         },
         {
           "side": "right",
-          "text": "Another decision to make. You chose right. Looking ahead both paths seemed to lead to the same place but your instincts led you this way.",
+          "text": "You had another decision to make. You chose right. Looking ahead both paths seemed to lead to the same place but your instincts led you this way.",
           "label": "Continue this way",
           "next": "13"
         }
@@ -140,7 +140,7 @@
       "choices": [
         {
           "side": "left",
-          "text": "You chose to continue forward making you last decision pointless however, you felt comfort in that.",
+          "text": "You chose to continue forward making you last decision pointless, however you felt comfort in that.",
           "label": "Continue this way",
           "next": "15"
         },
@@ -156,7 +156,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/15.png",
       "gif": null,
-      "text": "You continued forward and start to notice that these paths led to the mouth of a cave. You wondered if thats where you're supposed to go.",
+      "text": "You continued forward and start to notice that these paths led to the mouth of a cave. You wondered if thats was where you were supposed to go.",
       "continueLabel": "Continue",
       "next": "16"
     },
@@ -164,7 +164,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/16.png",
       "gif": null,
-      "text": "The closer you got to the mouth of the cave the more anxiety you felt. You're not sure if this was fear or excitment.",
+      "text": "The closer you got to the mouth of the cave the more anxiety you felt. You're not sure if it was fear or excitment.",
       "continueLabel": "Continue",
       "next": "17"
     },
@@ -172,7 +172,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/17.png",
       "gif": null,
-      "text": "You're only a few steps from the entrance and as you took each one an overwhelming feeling of completion grew within you.",
+      "text": "You were only a few steps from the entrance and as you took each one an overwhelming feeling of completion grew within you.",
       "continueLabel": "Continue",
       "next": "18"
     },
@@ -268,7 +268,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/29.png",
       "gif": null,
-      "text": "You were now fully within the tree canopy. Unidentifiable fruit hanged down but you batted it away to continue on your journey.",
+      "text": "You were now fully within the tree canopy. Unidentifiable vegatation hanged down but you batted it away to continue on your journey.",
       "continueLabel": "Continue",
       "next": "30"
     },
@@ -319,7 +319,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/34.png",
       "gif": null,
-      "text": "As you continued you felt calmer and calmer but were aware that calmness can cause recklessness so you stayed vigilant. The cave mouth you felt holds your goal peaked in the distance.",
+      "text": "As you continued you felt calmer and calmer but were aware that calmness can cause recklessness so you stayed vigilant. The cave mouth, that you felt held your goal, peaked in the distance.",
       "continueLabel": "Continue",
       "next": "35"
     },
@@ -343,7 +343,7 @@
   "type": "linear",
   "image": "assets/stills/location-1/37.png",
   "gif": null,
-  "text": "At the mouth of the cave you, without hesitation you stepped inside.",
+  "text": "Arriving at the mouth of the cave, without hesitation you stepped inside.",
   "continueLabel": "Continue",
   "next": "ending-2"
 },
@@ -351,7 +351,7 @@
       "type": "linear",
       "image": "assets/stills/location-1/38.png",
       "gif": null,
-      "text": "Your carefulness paid off and you were one step away from solid ground. You lunged forward and make it to an intersection of multiple paths.",
+      "text": "Your carefulness paid off and you were one step away from solid ground. You lunged forward and made it to an intersection of multiple paths.",
       "continueLabel": "Continue",
       "next": "23"
     }
