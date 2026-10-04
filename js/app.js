@@ -139,6 +139,15 @@ function setupItemGrid() {
     if (selectedItemIndex === null) return;
     chosenItem = items[selectedItemIndex];
     el.screenItemSelect.classList.add("hidden");
+
+    // These thumbnails are behind us now — release their WebGL contexts
+    // rather than leaving them running invisibly for the rest of the session.
+    itemBoxes.forEach((box) => box.renderer && box.renderer.dispose());
+    if (previewRenderer) {
+      previewRenderer.dispose();
+      previewRenderer = null;
+    }
+
     showLocationSelect();
   };
 }
@@ -305,6 +314,8 @@ async function startLocation(loc) {
     el.choosePathBtn.disabled = true;
     el.loading.classList.remove("hidden");
 
+    carouselCards.forEach((card) => card.renderer && card.renderer.dispose());
+
     const res = await fetch(loc.dataFile);
     if (!res.ok) {
       throw new Error(`Could not load ${loc.dataFile} — status ${res.status}. Has this location's data file been added yet?`);
@@ -346,19 +357,25 @@ async function startLocation(loc) {
   }
 }
 
+let inventoryRenderer = null;
+
 function setupInventorySlot() {
   if (!chosenItem) return;
   el.inventorySlot.classList.remove("hidden");
 
   const img = new Image();
   img.onload = () => {
-    const renderer = DitherFactory.create();
-    renderer.init(el.inventoryCanvas);
-    renderer.setImage(img);
-    renderer.start();
+    el.inventoryCanvas.classList.remove("hidden");
+    el.inventoryFallback.classList.add("hidden");
+    if (!inventoryRenderer) {
+      inventoryRenderer = DitherFactory.create();
+      inventoryRenderer.init(el.inventoryCanvas);
+      inventoryRenderer.start();
+    }
+    inventoryRenderer.setImage(img);
   };
   img.onerror = () => {
-    el.inventoryCanvas.remove();
+    el.inventoryCanvas.classList.add("hidden");
     el.inventoryFallback.textContent = chosenItem.name;
     el.inventoryFallback.classList.remove("hidden");
   };
@@ -442,6 +459,9 @@ function render() {
     el.linearBtn.textContent = node.continueLabel || "Continue";
     el.boxLinear.classList.remove("hidden");
     el.boxLinear.classList.remove("textbox-center-screen");
+    el.boxLinear.classList.remove("textbox-bare");
+    el.linearBtn.classList.remove("choose-path-btn");
+    el.linearBtn.classList.add("continue-btn");
     el.linearBtn.onclick = () => goTo(node.next);
 
   } else if (node.type === "choice") {
@@ -462,11 +482,20 @@ function render() {
     el.boxEnd.classList.remove("hidden");
 
   } else if (node.type === "finish") {
+    const isBlankScreen = !node.image;
+
     el.linearText.textContent = node.text;
     el.linearBtn.textContent = node.continueLabel || "Finish";
     el.boxLinear.classList.remove("hidden");
-    el.boxLinear.classList.toggle("textbox-center-screen", !node.image);
+    el.boxLinear.classList.toggle("textbox-center-screen", isBlankScreen);
+    el.boxLinear.classList.toggle("textbox-bare", isBlankScreen);
+    el.linearBtn.classList.toggle("choose-path-btn", isBlankScreen);
+    el.linearBtn.classList.toggle("continue-btn", !isBlankScreen);
     el.linearBtn.onclick = returnToTitle;
+
+    if (isBlankScreen) {
+      el.inventorySlot.classList.add("hidden");
+    }
   }
 }
 
