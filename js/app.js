@@ -334,9 +334,9 @@ async function startLocation(loc) {
       console.warn("Could not load shared ending, continuing without it:", err);
     }
 
-    await preloadImages();
-
     currentId = story.start;
+    await ensureImageLoaded(story.nodes[currentId].image);
+
     el.loading.classList.add("hidden");
     el.scene.classList.remove("hidden");
 
@@ -392,28 +392,53 @@ function showFatalError(err) {
   `;
 }
 
-function preloadImages() {
-  const paths = new Set();
-  Object.values(story.nodes).forEach((node) => {
-    if (node.image) paths.add(node.image);
-    if (node.gif) paths.add(node.gif);
+// Loads one image and caches it, if not already cached/loading. Returns
+// a promise that resolves once it's ready (or failed — either way the
+// caller can proceed, a missing image just won't render).
+function ensureImageLoaded(src) {
+  if (!src) return Promise.resolve(null);
+  if (imageCache[src]) return Promise.resolve(imageCache[src]);
+
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = img.onerror = () => {
+      imageCache[src] = img;
+      resolve(img);
+    };
+    img.src = src;
   });
+}
 
-  const list = Array.from(paths);
+// Quietly starts loading images several steps ahead of the current node,
+// while the player is still reading the current screen — covers someone
+// clicking through quickly, not just the single very next image. At a
+// choice point this follows both branches, so a few steps past a choice
+// can mean several images loading at once; already-cached ones are
+// skipped automatically, so revisiting the same ground costs nothing.
+function prefetchUpcoming(node, depth = 3) {
+  const queue = [{ node, remaining: depth }];
+  const visited = new Set();
 
-  const promises = list.map(
-    (src) =>
-      new Promise((resolve) => {
-        const img = new Image();
-        img.onload = img.onerror = () => {
-          imageCache[src] = img;
-          resolve();
-        };
-        img.src = src;
-      })
-  );
+  while (queue.length) {
+    const { node: current, remaining } = queue.shift();
+    if (remaining <= 0) continue;
 
-  return Promise.all(promises);
+    const nextIds = [];
+    if ((current.type === "linear" || current.type === "finish") && current.next) {
+      nextIds.push(current.next);
+    } else if (current.type === "choice") {
+      current.choices.forEach((choice) => nextIds.push(choice.next));
+    }
+
+    nextIds.forEach((id) => {
+      if (visited.has(id)) return;
+      visited.add(id);
+      const nextNode = story.nodes[id];
+      if (!nextNode) return;
+      if (nextNode.image) ensureImageLoaded(nextNode.image);
+      queue.push({ node: nextNode, remaining: remaining - 1 });
+    });
+  }
 }
 
 function hideAllBoxes() {
@@ -428,7 +453,7 @@ function goTo(nextId) {
   render();
 }
 
-function render() {
+async function render() {
   const node = story.nodes[currentId];
   if (!node) {
     console.error("Unknown node id:", currentId);
@@ -440,17 +465,17 @@ function render() {
 
   if (node.image) {
     el.canvas.classList.remove("hidden");
-    const cachedImage = imageCache[node.image];
-    if (cachedImage) {
-      Dither.setImage(cachedImage);
-    } else {
-      console.warn("Image not in cache, was it in the preload list?", node.image);
-    }
+    // Usually already cached by the previous screen's prefetch — this
+    // only actually waits on a real load if someone clicks unusually fast.
+    const image = await ensureImageLoaded(node.image);
+    if (image) Dither.setImage(image);
   } else {
     // No image on this node — a genuinely blank screen (just the body's
     // black background showing through), used for the closing text screen.
     el.canvas.classList.add("hidden");
   }
+
+  prefetchUpcoming(node);
 
   hideAllBoxes();
 
