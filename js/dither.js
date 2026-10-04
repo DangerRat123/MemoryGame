@@ -1,23 +1,3 @@
-// js/dither.js
-//
-// A reusable WebGL layer that draws whatever image is "current" through an
-// ordered (Bayer) dither shader, in full color, with a slow drift so the
-// pattern isn't perfectly static.
-//
-// Each call to DitherFactory.create() sets up its own independent canvas/
-// shader/settings — so the main scene and every thumbnail on the location
-// grid can each run their own dither instance simultaneously.
-//
-// Usage:
-//   const renderer = DitherFactory.create();
-//   renderer.init(canvasElement);
-//   renderer.setImage(loadedImageElement);   // swap the source image any time
-//   renderer.start();                          // begins this instance's render loop
-//   renderer.settings.cellSize = 4;             // tweak any time, takes effect next frame
-//
-// `Dither` (no parens) is kept as a ready-made default instance for
-// backward compatibility — that's what the main scene canvas uses.
-
 const DitherFactory = (() => {
   const VERTEX_SRC = `
     attribute vec2 a_position;
@@ -28,7 +8,7 @@ const DitherFactory = (() => {
     }
   `;
 
-  const FRAGMENT_SRC = `
+  const FRAGMENT_SRC_BAYER = `
     precision mediump float;
     varying vec2 v_uv;
     uniform sampler2D u_texture;
@@ -39,8 +19,6 @@ const DitherFactory = (() => {
     uniform float u_cellSize;
     uniform float u_driftSpeed;
 
-    // Returns a value 0..15 for a 4x4 ordered (Bayer) dither matrix,
-    // based on the integer cell position passed in.
     float bayerValue(vec2 p) {
       int x = int(mod(p.x, 4.0));
       int y = int(mod(p.y, 4.0));
@@ -64,22 +42,59 @@ const DitherFactory = (() => {
     }
 
     void main() {
-      // Map v_uv (0..1 over the canvas) onto the image with a "cover" fit,
-      // so images keep their aspect ratio instead of stretching.
       vec2 uv = (v_uv - 0.5) * u_uvScale + 0.5;
       vec4 color = texture2D(u_texture, uv);
 
-      // Where in screen space this pixel sits, in dither-cell units,
-      // slowly drifting over time so the pattern isn't perfectly static.
       vec2 fragCoord = v_uv * u_resolution;
       vec2 drift = vec2(u_time * u_driftSpeed, u_time * u_driftSpeed * 0.7);
       vec2 cellCoord = (fragCoord / u_cellSize) + drift;
 
       float threshold = (bayerValue(floor(cellCoord)) + 0.5) / 16.0;
 
-      // Quantize each color channel down to u_levels steps, using the
-      // dither threshold to decide whether this pixel rounds up or down —
-      // this is what produces the textured grain instead of flat banding.
+      vec3 stepped = color.rgb * u_levels;
+      vec3 fracPart = fract(stepped);
+      vec3 quantized = floor(stepped) + step(threshold, fracPart.r) * vec3(1.0, 0.0, 0.0)
+                                       + step(threshold, fracPart.g) * vec3(0.0, 1.0, 0.0)
+                                       + step(threshold, fracPart.b) * vec3(0.0, 0.0, 1.0);
+      vec3 finalColor = quantized / u_levels;
+
+      gl_FragColor = vec4(finalColor, color.a);
+    }
+  `;
+
+  // "Organic" mode — a real-time stand-in for error-diffusion (Floyd–
+  // Steinberg-style) dithering. True Floyd–Steinberg is a sequential,
+  // pixel-depends-on-the-last-pixel process, which can't run on a GPU in
+  // parallel — so instead this uses interleaved gradient noise (a fast,
+  // irregular pseudo-random pattern, not a repeating tile) as the dither
+  // threshold. It gives the same non-grid, grainy, organic look, and
+  // still supports the same per-frame drift for movement.
+  const FRAGMENT_SRC_ORGANIC = `
+    precision mediump float;
+    varying vec2 v_uv;
+    uniform sampler2D u_texture;
+    uniform float u_time;
+    uniform vec2 u_resolution;
+    uniform vec2 u_uvScale;
+    uniform float u_levels;
+    uniform float u_cellSize;
+    uniform float u_driftSpeed;
+
+    float interleavedGradientNoise(vec2 p) {
+      vec3 magic = vec3(0.06711056, 0.00583715, 52.9829189);
+      return fract(magic.z * fract(dot(p, magic.xy)));
+    }
+
+    void main() {
+      vec2 uv = (v_uv - 0.5) * u_uvScale + 0.5;
+      vec4 color = texture2D(u_texture, uv);
+
+      vec2 fragCoord = v_uv * u_resolution;
+      vec2 drift = vec2(u_time * u_driftSpeed * 11.3, u_time * u_driftSpeed * 7.9);
+      vec2 noiseCoord = (fragCoord / u_cellSize) + drift;
+
+      float threshold = interleavedGradientNoise(noiseCoord);
+
       vec3 stepped = color.rgb * u_levels;
       vec3 fracPart = fract(stepped);
       vec3 quantized = floor(stepped) + step(threshold, fracPart.r) * vec3(1.0, 0.0, 0.0)
@@ -101,7 +116,10 @@ const DitherFactory = (() => {
     return shader;
   }
 
-  function create() {
+  function create(options) {
+    const mode = (options && options.mode) || "bayer";
+    const FRAGMENT_SRC = mode === "organic" ? FRAGMENT_SRC_ORGANIC : FRAGMENT_SRC_BAYER;
+
     let gl, program, canvas;
     let currentTexture = null;
     let currentImage = null;
@@ -110,9 +128,9 @@ const DitherFactory = (() => {
     let running = false;
 
     const settings = {
-      levels: 5,        // color levels per channel — lower = more posterized/retro
-      cellSize: 2.0,     // size in screen pixels of one dither pattern cell — bigger = chunkier grain
-      driftSpeed: 0.6,  // how fast the pattern drifts, in pattern-cells per second. Keep low for subtlety.
+      levels: 5,
+      cellSize: 2.0,
+      driftSpeed: 0.6,
     };
 
     function init(canvasEl) {
@@ -189,8 +207,6 @@ const DitherFactory = (() => {
       if (!startTime) startTime = now;
       const elapsed = (now - startTime) / 1000;
 
-      // Canvas size can change (e.g. a thumbnail card resizing) without a
-      // window resize event firing, so re-measure defensively each frame.
       if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
         resize();
       }
@@ -214,12 +230,20 @@ const DitherFactory = (() => {
       requestAnimationFrame(frame);
     }
 
-    return { init, setImage, start, settings };
+    function dispose() {
+      running = false;
+      window.removeEventListener("resize", resize);
+      if (gl) {
+        const ext = gl.getExtension("WEBGL_lose_context");
+        if (ext) ext.loseContext();
+      }
+      gl = null;
+    }
+
+    return { init, setImage, start, dispose, settings };
   }
 
   return { create };
 })();
 
-// A ready-made default instance for the main journey scene, so existing
-// code that calls Dither.init(...) / Dither.setImage(...) keeps working.
-const Dither = DitherFactory.create();
+const Dither = DitherFactory.create({ mode: "organic" });
