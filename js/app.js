@@ -415,7 +415,7 @@ function ensureImageLoaded(src) {
 // choice point this follows both branches, so a few steps past a choice
 // can mean several images loading at once; already-cached ones are
 // skipped automatically, so revisiting the same ground costs nothing.
-function prefetchUpcoming(node, depth = 3) {
+function prefetchUpcoming(node, depth = 10) {
   const queue = [{ node, remaining: depth }];
   const visited = new Set();
 
